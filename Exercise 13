@@ -1,0 +1,12 @@
+def fibo_function(n):
+    if n<=1:
+        return n
+    else:
+        return (fibo_function(n-1)+fibo_function(n-2))
+nterm=int(input("please input an integer: "))
+
+if nterm<=0:
+    print("please input a positive integer")
+else:
+    for i in range(nterm):
+        print(fibo_function(i))
